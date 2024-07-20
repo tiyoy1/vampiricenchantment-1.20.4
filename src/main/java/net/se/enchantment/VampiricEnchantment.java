@@ -21,7 +21,7 @@ public class VampiricEnchantment extends Enchantment {
     @Override
     public void onTargetDamaged(LivingEntity user, Entity target, int level) {
         if (user instanceof PlayerEntity player) {
-            player.heal(getMaxLevel());
+            player.heal(0.5F * level);
         }
         super.onTargetDamaged(user, target, level);
     }
