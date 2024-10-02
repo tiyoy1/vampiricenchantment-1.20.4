@@ -18,8 +18,7 @@ public class ArmorPiercingEnchantment extends Enchantment {
 
     @Override
     public void onTargetDamaged(LivingEntity user, Entity target, int level) {
-        if(level > 0){
-        }
+
         super.onTargetDamaged(user, target, level);
     }
 }
